@@ -1,0 +1,4 @@
+searchKey,productName,resultCount,imageCount,brand,porductCode,rewardPoints,availability,productPrice,exTaxPrice
+macbook,MacBook Pro,3,4, Apple,Product 18,800,Out Of Stock,"$2,000.00","$2,000.00"
+macbook,MacBook Air,3,4,Apple,Product 17,700,Out Of Stock,"$1,202.00","$1,000.00"
+imac, iMac,1,3,Apple,Product 14,,Out Of Stock,"$122.00","$100.00"
