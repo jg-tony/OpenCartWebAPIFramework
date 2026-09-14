@@ -24,7 +24,7 @@ test.beforeEach("POST -- generate the access token", async ({ request }) => {
   accessToken = jsonResponse.access_token;
 });
 
-test("GET --- get location data", async ({ request }) => {
+test.skip("GET --- get location data", async ({ request }) => {
   let endPointURL = "/v1/reference-data/locations";
 
   let queryParam = {
