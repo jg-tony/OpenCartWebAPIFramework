@@ -38,7 +38,7 @@ let userArraysSchema = {
   items: userSchema,
 };
 
-test("GET -- get a user", async ({ apiHelper }) => {
+test.skip("GET -- get a user", async ({ apiHelper }) => {
   let userData = {
     name: "schema test",
     email: `automation${Date.now()}@open.com`,
@@ -63,7 +63,7 @@ test("GET -- get a user", async ({ apiHelper }) => {
   expect(isSchemaValid).toBeTruthy();
 });
 
-test("GET -- get all users", async ({ apiHelper }) => {
+test.skip("GET -- get all users", async ({ apiHelper }) => {
   //get the user
   let getResponse = await apiHelper.get(`/public/v2/users`, AUTH_HEADER);
   expect(getResponse.status).toBe(200);

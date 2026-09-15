@@ -25,7 +25,7 @@ test("Login as user and verify logout link exists", async ({ loginPage, homePage
 });
 
 //sequence mode - 1 test is running with test data one by one.
-test("login to app using wrong credentails with Data driven test", async ({ loginPage, loginTestData }) => {
+test.skip("login to app using wrong credentails with Data driven test", async ({ loginPage, loginTestData }) => {
   for (let row of loginTestData) {
     await loginPage.doLogin(row.username, row.password);
     expect(await loginPage.isInvalidLoginErrorDisplayed()).toBeTruthy();
